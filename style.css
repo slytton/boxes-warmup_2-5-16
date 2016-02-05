@@ -27,6 +27,15 @@ svg {
   height: 300px;
 }
 
-svg polyline, svg polygon{
+svg > rect, svg > polyline, svg > polygon{
   fill: green;
+  transition-duration: 1s
+}
+
+svg *:hover {
+  fill: red;
+  transition-duration: 1s;
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
 }
